@@ -12,6 +12,7 @@ class YHMineViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.redColor()
     }
 
     override func didReceiveMemoryWarning() {

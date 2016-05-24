@@ -13,6 +13,10 @@
 		2E7322171CF33D090027ABA3 /* YHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322161CF33D090027ABA3 /* YHHomeViewController.swift */; };
 		2E7322191CF33D5A0027ABA3 /* YHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322181CF33D5A0027ABA3 /* YHNavigationController.swift */; };
 		2E73221B1CF347920027ABA3 /* YHMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E73221A1CF347920027ABA3 /* YHMineViewController.swift */; };
+		2E7322411CF49B930027ABA3 /* YHNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322401CF49B930027ABA3 /* YHNetworkTool.swift */; };
+		2E7322431CF49BA50027ABA3 /* YHNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322421CF49BA50027ABA3 /* YHNetworkManager.swift */; };
+		2E7322451CF49FB00027ABA3 /* YHConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322441CF49FB00027ABA3 /* YHConst.swift */; };
+		BD921E0DEE32A88B9D88F832 /* Pods_YHFanfou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60507CA7A060A23B6FD833B0 /* Pods_YHFanfou.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		2E7322161CF33D090027ABA3 /* YHHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHHomeViewController.swift; sourceTree = "<group>"; };
 		2E7322181CF33D5A0027ABA3 /* YHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNavigationController.swift; sourceTree = "<group>"; };
 		2E73221A1CF347920027ABA3 /* YHMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHMineViewController.swift; sourceTree = "<group>"; };
+		2E7322401CF49B930027ABA3 /* YHNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNetworkTool.swift; sourceTree = "<group>"; };
+		2E7322421CF49BA50027ABA3 /* YHNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNetworkManager.swift; sourceTree = "<group>"; };
+		2E7322441CF49FB00027ABA3 /* YHConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHConst.swift; sourceTree = "<group>"; };
+		60507CA7A060A23B6FD833B0 /* Pods_YHFanfou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHFanfou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		744BAF1FBF12D959682500CA /* Pods-YHFanfou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHFanfou.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou.release.xcconfig"; sourceTree = "<group>"; };
+		9BC41A6E7D9AC9873AAEA318 /* Pods-YHFanfou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHFanfou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD921E0DEE32A88B9D88F832 /* Pods_YHFanfou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				2E7321F31CF339B80027ABA3 /* YHFanfou */,
 				2E7321F21CF339B80027ABA3 /* Products */,
+				5E78E30F9045EE0A0553EBA1 /* Pods */,
+				C4E875418D3341E2EE5D39C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +80,7 @@
 		2E7322061CF33C040027ABA3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2E73223F1CF49AB30027ABA3 /* Tool */,
 				2E73220C1CF33C040027ABA3 /* Main */,
 				2E7322081CF33C040027ABA3 /* Home */,
 				2E7322101CF33C040027ABA3 /* Mine */,
@@ -179,6 +193,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2E73223F1CF49AB30027ABA3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				2E7322401CF49B930027ABA3 /* YHNetworkTool.swift */,
+				2E7322421CF49BA50027ABA3 /* YHNetworkManager.swift */,
+				2E7322441CF49FB00027ABA3 /* YHConst.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		5E78E30F9045EE0A0553EBA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BC41A6E7D9AC9873AAEA318 /* Pods-YHFanfou.debug.xcconfig */,
+				744BAF1FBF12D959682500CA /* Pods-YHFanfou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4E875418D3341E2EE5D39C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60507CA7A060A23B6FD833B0 /* Pods_YHFanfou.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E7322031CF339B90027ABA3 /* Build configuration list for PBXNativeTarget "YHFanfou" */;
 			buildPhases = (
+				4087C7F6D385C68B39BB77B8 /* 📦 Check Pods Manifest.lock */,
 				2E7321ED1CF339B80027ABA3 /* Sources */,
 				2E7321EE1CF339B80027ABA3 /* Frameworks */,
 				2E7321EF1CF339B80027ABA3 /* Resources */,
+				90D22EFA34C354C0069A79CF /* 📦 Embed Pods Frameworks */,
+				D6C7BAC6148A0262F140861D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,16 +288,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4087C7F6D385C68B39BB77B8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90D22EFA34C354C0069A79CF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6C7BAC6148A0262F140861D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E7321ED1CF339B80027ABA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7322451CF49FB00027ABA3 /* YHConst.swift in Sources */,
 				2E7322191CF33D5A0027ABA3 /* YHNavigationController.swift in Sources */,
 				2E7322171CF33D090027ABA3 /* YHHomeViewController.swift in Sources */,
+				2E7322431CF49BA50027ABA3 /* YHNetworkManager.swift in Sources */,
 				2E73221B1CF347920027ABA3 /* YHMineViewController.swift in Sources */,
 				2E7322151CF33C4F0027ABA3 /* YHTabBarController.swift in Sources */,
 				2E7321F51CF339B80027ABA3 /* AppDelegate.swift in Sources */,
+				2E7322411CF49B930027ABA3 /* YHNetworkTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +438,7 @@
 		};
 		2E7322041CF339B90027ABA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC41A6E7D9AC9873AAEA318 /* Pods-YHFanfou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YHFanfou/Info.plist;
@@ -354,6 +450,7 @@
 		};
 		2E7322051CF339B90027ABA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744BAF1FBF12D959682500CA /* Pods-YHFanfou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YHFanfou/Info.plist;

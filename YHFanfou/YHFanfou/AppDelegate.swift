@@ -20,6 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = YHTabBarController()
         window?.makeKeyAndVisible()
         
+        
+        var params = [String : AnyObject]()
+        params["oauth_consumer_key"] = consumer_key
+        
+        
+        YHNetworkManager.sharedManager().request("http://fanfou.com/oauth/request_token", params: params) { (response, error) -> Void in
+            
+            print("\(response)"+"---"+"\(error)")
+        }
+        
         return true
     }
 

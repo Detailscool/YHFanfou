@@ -1,0 +1,6 @@
+framework module Pods_YHFanfou {
+  umbrella header "Pods-YHFanfou-umbrella.h"
+
+  export *
+  module * { export * }
+}
