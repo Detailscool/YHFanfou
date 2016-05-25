@@ -17,18 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = YHTabBarController()
+        window?.rootViewController = YHLoginViewController()
         window?.makeKeyAndVisible()
         
-        
-        var params = [String : AnyObject]()
-        params["oauth_consumer_key"] = consumer_key
-        
-        
-        YHNetworkManager.sharedManager().request("http://fanfou.com/oauth/request_token", params: params) { (response, error) -> Void in
-            
-            print("\(response)"+"---"+"\(error)")
-        }
+        YHOAuthManager.requestForOAuth()
         
         return true
     }

@@ -12,7 +12,7 @@ import AFNetworking
 class YHNetworkTool: AFHTTPSessionManager {
     
     private static let networkTool : YHNetworkTool = {
-        let tool = YHNetworkTool()
+        let tool = YHNetworkTool(baseURL: NSURL(string: base_url))
         tool.responseSerializer.acceptableContentTypes?.insert("application/xml")
         return tool
     }()

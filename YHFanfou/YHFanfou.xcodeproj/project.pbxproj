@@ -17,6 +17,9 @@
 		2E7322431CF49BA50027ABA3 /* YHNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322421CF49BA50027ABA3 /* YHNetworkManager.swift */; };
 		2E7322451CF49FB00027ABA3 /* YHConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322441CF49FB00027ABA3 /* YHConst.swift */; };
 		BD921E0DEE32A88B9D88F832 /* Pods_YHFanfou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60507CA7A060A23B6FD833B0 /* Pods_YHFanfou.framework */; };
+		D0F559151CF535A700AEDF75 /* YHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F559141CF535A700AEDF75 /* YHLoginViewController.swift */; };
+		D0F559171CF53BBB00AEDF75 /* YHOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F559161CF53BBB00AEDF75 /* YHOAuthManager.swift */; };
+		D0F559201CF5455800AEDF75 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5591F1CF5455800AEDF75 /* NSDate+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		60507CA7A060A23B6FD833B0 /* Pods_YHFanfou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHFanfou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		744BAF1FBF12D959682500CA /* Pods-YHFanfou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHFanfou.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou.release.xcconfig"; sourceTree = "<group>"; };
 		9BC41A6E7D9AC9873AAEA318 /* Pods-YHFanfou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHFanfou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou.debug.xcconfig"; sourceTree = "<group>"; };
+		D0F559141CF535A700AEDF75 /* YHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHLoginViewController.swift; sourceTree = "<group>"; };
+		D0F559161CF53BBB00AEDF75 /* YHOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHOAuthManager.swift; sourceTree = "<group>"; };
+		D0F5591F1CF5455800AEDF75 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,20 +86,14 @@
 		2E7322061CF33C040027ABA3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D0F5591E1CF5454E00AEDF75 /* Category */,
+				D0F559121CF5358500AEDF75 /* Login */,
 				2E73223F1CF49AB30027ABA3 /* Tool */,
 				2E73220C1CF33C040027ABA3 /* Main */,
 				2E7322081CF33C040027ABA3 /* Home */,
 				2E7322101CF33C040027ABA3 /* Mine */,
-				2E7322071CF33C040027ABA3 /* Category */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		2E7322071CF33C040027ABA3 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		2E7322081CF33C040027ABA3 /* Home */ = {
@@ -199,6 +199,7 @@
 				2E7322401CF49B930027ABA3 /* YHNetworkTool.swift */,
 				2E7322421CF49BA50027ABA3 /* YHNetworkManager.swift */,
 				2E7322441CF49FB00027ABA3 /* YHConst.swift */,
+				D0F559161CF53BBB00AEDF75 /* YHOAuthManager.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -220,6 +221,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D0F559121CF5358500AEDF75 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D0F559131CF5358500AEDF75 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D0F559131CF5358500AEDF75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0F559141CF535A700AEDF75 /* YHLoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0F5591E1CF5454E00AEDF75 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D0F5591F1CF5455800AEDF75 /* NSDate+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +258,7 @@
 				2E7321EF1CF339B80027ABA3 /* Resources */,
 				90D22EFA34C354C0069A79CF /* 📦 Embed Pods Frameworks */,
 				D6C7BAC6148A0262F140861D /* 📦 Copy Pods Resources */,
+				A1AFF98AE1E3B4430A1CD45B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +345,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A1AFF98AE1E3B4430A1CD45B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D6C7BAC6148A0262F140861D /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,10 +382,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F559171CF53BBB00AEDF75 /* YHOAuthManager.swift in Sources */,
 				2E7322451CF49FB00027ABA3 /* YHConst.swift in Sources */,
 				2E7322191CF33D5A0027ABA3 /* YHNavigationController.swift in Sources */,
 				2E7322171CF33D090027ABA3 /* YHHomeViewController.swift in Sources */,
+				D0F559151CF535A700AEDF75 /* YHLoginViewController.swift in Sources */,
 				2E7322431CF49BA50027ABA3 /* YHNetworkManager.swift in Sources */,
+				D0F559201CF5455800AEDF75 /* NSDate+Extension.swift in Sources */,
 				2E73221B1CF347920027ABA3 /* YHMineViewController.swift in Sources */,
 				2E7322151CF33C4F0027ABA3 /* YHTabBarController.swift in Sources */,
 				2E7321F51CF339B80027ABA3 /* AppDelegate.swift in Sources */,

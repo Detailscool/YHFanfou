@@ -14,13 +14,17 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - SnapKit (0.21.0)
+  - SSKeychain (1.4.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - SnapKit
+  - SSKeychain
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
 
-PODFILE CHECKSUM: 002be7ce5be7bf762839ed541a040387260594b1
-
-COCOAPODS: 1.0.0
+COCOAPODS: 0.39.0
