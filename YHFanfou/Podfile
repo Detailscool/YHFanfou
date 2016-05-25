@@ -6,7 +6,7 @@ target 'YHFanfou' do
   use_frameworks!
   pod 'AFNetworking'
   pod 'SnapKit'
-  pod 'SSKeychain'
+  # pod 'SSKeychain'
   # Pods for YHFanfou
 
 end

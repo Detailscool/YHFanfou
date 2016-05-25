@@ -21,8 +21,8 @@ class YHOAuthManager: NSObject {
         var params = [String : AnyObject]()
         params["oauth_consumer_key"] = consumer_key
         params["oauth_signature_method"] = oauth_signature_method
-        params["oauth_timestamp"] = NSDate().stringFromDate()
         params["oauth_signature"] = OAuthSignature()
+        params["oauth_timestamp"] = "\(NSDate().timeIntervalSince1970 as! CLongLong)"
         params["oauth_nonce"] = "\(arc4random())"
         
         YHNetworkManager.sharedManager().request(request_token_url, params: params) { (response, error) -> Void in
@@ -31,11 +31,12 @@ class YHOAuthManager: NSObject {
         }
     }
     
-    class func OAuthSignature() -> String {
+    private class func OAuthSignature() -> String {
         let httpMethod = "GET"
-        let url_encode = ""
+        let url_encode = request_token_url.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
         let sorted_query_items = ""
-        return httpMethod + "&" + url_encode + "&" + sorted_query_items
+        let base_string = httpMethod + "&" + url_encode! + "&" + sorted_query_items
+        return base_string
     }
     
 }
