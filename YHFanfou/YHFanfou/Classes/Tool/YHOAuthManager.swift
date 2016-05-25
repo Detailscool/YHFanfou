@@ -22,8 +22,10 @@ class YHOAuthManager: NSObject {
         params["oauth_consumer_key"] = consumer_key
         params["oauth_signature_method"] = oauth_signature_method
         params["oauth_signature"] = OAuthSignature()
-        params["oauth_timestamp"] = "\(NSDate().timeIntervalSince1970 as! CLongLong)"
+        params["oauth_timestamp"] = String(format: "%lf",NSDate().timeIntervalSince1970).componentsSeparatedByString(".").first
         params["oauth_nonce"] = "\(arc4random())"
+        
+        print("\(params)")
         
         YHNetworkManager.sharedManager().request(request_token_url, params: params) { (response, error) -> Void in
             
