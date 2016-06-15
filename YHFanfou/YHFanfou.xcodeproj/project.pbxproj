@@ -13,12 +13,12 @@
 		2E7322171CF33D090027ABA3 /* YHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322161CF33D090027ABA3 /* YHHomeViewController.swift */; };
 		2E7322191CF33D5A0027ABA3 /* YHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322181CF33D5A0027ABA3 /* YHNavigationController.swift */; };
 		2E73221B1CF347920027ABA3 /* YHMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E73221A1CF347920027ABA3 /* YHMineViewController.swift */; };
-		2E7322411CF49B930027ABA3 /* YHNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322401CF49B930027ABA3 /* YHNetworkTool.swift */; };
-		2E7322431CF49BA50027ABA3 /* YHNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322421CF49BA50027ABA3 /* YHNetworkManager.swift */; };
-		2E7322451CF49FB00027ABA3 /* YHConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7322441CF49FB00027ABA3 /* YHConst.swift */; };
+		8D09ECC41D0FE18C00F5E957 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09ECC31D0FE18C00F5E957 /* UIView+Extension.swift */; };
+		8D79A9D71D11440200A71307 /* FanFouAuthManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D79A9D61D11440200A71307 /* FanFouAuthManger.swift */; };
+		8D79A9D91D11440600A71307 /* YHFanFouConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D79A9D81D11440600A71307 /* YHFanFouConfig.swift */; };
+		8D79A9DB1D11451700A71307 /* Extend+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D79A9DA1D11451700A71307 /* Extend+UIView.swift */; };
 		BD921E0DEE32A88B9D88F832 /* Pods_YHFanfou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60507CA7A060A23B6FD833B0 /* Pods_YHFanfou.framework */; };
 		D0F559151CF535A700AEDF75 /* YHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F559141CF535A700AEDF75 /* YHLoginViewController.swift */; };
-		D0F559171CF53BBB00AEDF75 /* YHOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F559161CF53BBB00AEDF75 /* YHOAuthManager.swift */; };
 		D0F559201CF5455800AEDF75 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5591F1CF5455800AEDF75 /* NSDate+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,14 +31,14 @@
 		2E7322161CF33D090027ABA3 /* YHHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHHomeViewController.swift; sourceTree = "<group>"; };
 		2E7322181CF33D5A0027ABA3 /* YHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNavigationController.swift; sourceTree = "<group>"; };
 		2E73221A1CF347920027ABA3 /* YHMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHMineViewController.swift; sourceTree = "<group>"; };
-		2E7322401CF49B930027ABA3 /* YHNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNetworkTool.swift; sourceTree = "<group>"; };
-		2E7322421CF49BA50027ABA3 /* YHNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNetworkManager.swift; sourceTree = "<group>"; };
-		2E7322441CF49FB00027ABA3 /* YHConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHConst.swift; sourceTree = "<group>"; };
 		60507CA7A060A23B6FD833B0 /* Pods_YHFanfou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHFanfou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		744BAF1FBF12D959682500CA /* Pods-YHFanfou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHFanfou.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou.release.xcconfig"; sourceTree = "<group>"; };
+		8D09ECC31D0FE18C00F5E957 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8D79A9D61D11440200A71307 /* FanFouAuthManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanFouAuthManger.swift; sourceTree = "<group>"; };
+		8D79A9D81D11440600A71307 /* YHFanFouConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHFanFouConfig.swift; sourceTree = "<group>"; };
+		8D79A9DA1D11451700A71307 /* Extend+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extend+UIView.swift"; sourceTree = "<group>"; };
 		9BC41A6E7D9AC9873AAEA318 /* Pods-YHFanfou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHFanfou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHFanfou/Pods-YHFanfou.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F559141CF535A700AEDF75 /* YHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHLoginViewController.swift; sourceTree = "<group>"; };
-		D0F559161CF53BBB00AEDF75 /* YHOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHOAuthManager.swift; sourceTree = "<group>"; };
 		D0F5591F1CF5455800AEDF75 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,10 +196,8 @@
 		2E73223F1CF49AB30027ABA3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				2E7322401CF49B930027ABA3 /* YHNetworkTool.swift */,
-				2E7322421CF49BA50027ABA3 /* YHNetworkManager.swift */,
-				2E7322441CF49FB00027ABA3 /* YHConst.swift */,
-				D0F559161CF53BBB00AEDF75 /* YHOAuthManager.swift */,
+				8D79A9D61D11440200A71307 /* FanFouAuthManger.swift */,
+				8D79A9D81D11440600A71307 /* YHFanFouConfig.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -240,7 +238,9 @@
 		D0F5591E1CF5454E00AEDF75 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8D09ECC31D0FE18C00F5E957 /* UIView+Extension.swift */,
 				D0F5591F1CF5455800AEDF75 /* NSDate+Extension.swift */,
+				8D79A9DA1D11451700A71307 /* Extend+UIView.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -382,17 +382,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F559171CF53BBB00AEDF75 /* YHOAuthManager.swift in Sources */,
-				2E7322451CF49FB00027ABA3 /* YHConst.swift in Sources */,
 				2E7322191CF33D5A0027ABA3 /* YHNavigationController.swift in Sources */,
 				2E7322171CF33D090027ABA3 /* YHHomeViewController.swift in Sources */,
 				D0F559151CF535A700AEDF75 /* YHLoginViewController.swift in Sources */,
-				2E7322431CF49BA50027ABA3 /* YHNetworkManager.swift in Sources */,
+				8D79A9DB1D11451700A71307 /* Extend+UIView.swift in Sources */,
+				8D79A9D71D11440200A71307 /* FanFouAuthManger.swift in Sources */,
+				8D09ECC41D0FE18C00F5E957 /* UIView+Extension.swift in Sources */,
+				8D79A9D91D11440600A71307 /* YHFanFouConfig.swift in Sources */,
 				D0F559201CF5455800AEDF75 /* NSDate+Extension.swift in Sources */,
 				2E73221B1CF347920027ABA3 /* YHMineViewController.swift in Sources */,
 				2E7322151CF33C4F0027ABA3 /* YHTabBarController.swift in Sources */,
 				2E7321F51CF339B80027ABA3 /* AppDelegate.swift in Sources */,
-				2E7322411CF49B930027ABA3 /* YHNetworkTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

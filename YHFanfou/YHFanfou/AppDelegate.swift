@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = YHLoginViewController()
         window?.makeKeyAndVisible()
         
-        YHOAuthManager.requestForOAuth()
+//        YHOAuthManager.requestForOAuth()
         
         return true
     }

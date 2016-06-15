@@ -84,12 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-YHFanfou/AFNetworking.framework"
-  install_framework "Pods-YHFanfou/SSKeychain.framework"
+  install_framework "Pods-YHFanfou/Alamofire.framework"
+  install_framework "Pods-YHFanfou/CryptoSwift.framework"
+  install_framework "Pods-YHFanfou/Kingfisher.framework"
+  install_framework "Pods-YHFanfou/OAuthSwift.framework"
   install_framework "Pods-YHFanfou/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-YHFanfou/AFNetworking.framework"
-  install_framework "Pods-YHFanfou/SSKeychain.framework"
+  install_framework "Pods-YHFanfou/Alamofire.framework"
+  install_framework "Pods-YHFanfou/CryptoSwift.framework"
+  install_framework "Pods-YHFanfou/Kingfisher.framework"
+  install_framework "Pods-YHFanfou/OAuthSwift.framework"
   install_framework "Pods-YHFanfou/SnapKit.framework"
 fi
